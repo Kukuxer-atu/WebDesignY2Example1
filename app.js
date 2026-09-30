@@ -24,8 +24,6 @@ app.engine(
 app.set('view engine', 'hbs');
 // where to find all of the view
 app.set('views',  'views');
-
-
 // where to find static files - css, images, js
 // this needs to be uncommented so that the css file can be found and used in the layout.hbs file
 app.use(express.static('public'));
@@ -36,20 +34,49 @@ app.get('/', (req, res) => {
   // set active for navigation
   state={home:true}
   // set specifics for <head>
-  head={title: "Home - Week 1"}
+  head={title: "Home"}
   // pass object to to render in "index"
   res.render('index', {state, head});
   // send this to terminal where node app is running
   console.log('home')
 
 });
-
 // contact route
 app.get('/contact', (req, res) => {
     state={contact : true}
-    head={title:"Contact - Week 1"}
+    head={title:"Contact"}
     res.render('contact', { state, head});
     console.log('contact')
+  });
+  app.get('/about', (req, res) => {
+    state={about : true}
+    head={title:"About"}
+    res.render('about', { state, head});
+    console.log('about')
+  });
+  app.get('/basket', (req, res) => {
+    state={basket : true}
+    head={title:"Basket"}
+    res.render('basket', { state, head});
+    console.log('basket')
+  });
+  app.get('/pepperoni', (req, res) => {
+    state={pepperoni : true}
+    head={title:"Pepperoni"}
+    res.render('pepperoni', { state, head});
+    console.log('pepperoni')
+  });
+   app.get('/veggie', (req, res) => {
+    state={veggie : true}
+    head={title:"Veggie"}
+    res.render('veggie', { state, head});
+    console.log('veggie')
+  });
+   app.get('/hawaiian', (req, res) => {
+    state={hawaiian : true}
+    head={title:"Hawaiian"}
+    res.render('hawaiian', { state, head});
+    console.log('hawaiian')
   });
 
 

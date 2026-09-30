@@ -1,6 +1,61 @@
 <main>
-    <h1>Contact</h1>
-    <p> Yevhenii Porkul S00292101
-        
-        </p>
-</main>
+      <div class="contact-wrapper">
+        <div class="contact-card">
+          <h1>Contact Kuku-Pizza</h1>
+
+          <p class="role">👨‍💻 Software Developer & Pizza Maker 🍕</p>
+
+          <div class="contact-item">
+            <span>Yevhenii Porkul</span>
+          </div>
+
+          <!-- INTERNAL + EXTERNAL LINKS -->
+          <div class="contact-item">
+            <a href="#form">Go to Contact Form ↓</a>
+          </div>
+
+          <div class="contact-item">
+            <a
+              href="https://www.youtube.com/watch?v=bvtvB3-Sc7o"
+              target="_blank"
+              >How to make a pizza</a
+            >
+          </div>
+
+          <div class="contact-item">
+            <a href="https://github.com/Kukuxer-atu" target="_blank">
+              github.com/Kukuxer-atu
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <a href="https://instagram.com/kukuxer" target="_blank">
+              @kukuxer
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1594007654729-407eedc4be65"
+          class="float-img"
+          alt="Pizza"
+        />
+
+        <form id="form" class="contact-form" onsubmit="return validateForm();">
+          <h2>Send Us a Message</h2>
+
+          <label>Name <span class="required">*</span></label>
+          <input type="text" id="name" />
+
+          <label>Email <span class="required">*</span></label>
+          <input type="email" id="email" />
+
+          <label>Message <span class="required">*</span></label>
+          <textarea id="message"></textarea>
+
+          <button type="submit">Send Message</button>
+
+          <p id="form-msg"></p>
+        </form>
+      </div>
+    </main>
