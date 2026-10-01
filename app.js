@@ -85,6 +85,8 @@ app.get('/contact', (req, res) => {
     console.log('responsiveExample')
   });
 
+  app.use(express.static('public'));
+
 
 // Start the server
 app.listen(3000, () => {
