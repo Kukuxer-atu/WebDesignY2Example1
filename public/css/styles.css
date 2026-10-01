@@ -774,3 +774,85 @@ footer {
     right: 10px;
   }
 }
+
+
+/* ========================================
+   RESPONSIVE PIZZA CARD
+======================================== */
+
+.responsive-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.responsive-card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ========================================
+   RESPONSIVE CARD IMAGE
+======================================== */
+
+.responsive-card picture {
+  display: block;
+  width: 100%;
+}
+
+.responsive-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* ========================================
+   RESPONSIVE CARD CONTENT
+======================================== */
+
+.responsive-card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.responsive-card-content h2 {
+  margin-bottom: 10px;
+  color: #750796;
+}
+
+.responsive-card-content p {
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   RESPONSIVE CARD - MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .responsive-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  .responsive-card-content {
+    padding: 15px;
+  }
+
+  .responsive-card-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .responsive-card-content p {
+    font-size: 0.95rem;
+  }
+}

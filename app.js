@@ -78,6 +78,12 @@ app.get('/contact', (req, res) => {
     res.render('hawaiian', { state, head});
     console.log('hawaiian')
   });
+   app.get('/responsiveExample', (req, res) => {
+    state={responsiveExample : true}
+    head={title:"Responsive Example"}
+    res.render('responsiveExample', { state, head});
+    console.log('responsiveExample')
+  });
 
 
 // Start the server
