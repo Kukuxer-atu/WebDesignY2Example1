@@ -84,8 +84,19 @@ app.get('/contact', (req, res) => {
     res.render('responsiveExample', { state, head});
     console.log('responsiveExample')
   });
+    app.get('/valuessubmitted', (req, res) => {
+    state={valuessubmited : true}
+    console.table(req.query);
+    //console.log(json.stringify(req.query));
+    head={title:"form values"} ;
+    res.render('valuessubmitted', { state, head, data: req.query });
+    console.log('valuessubmitted')
+  });
 
   app.use(express.static('public'));
+
+
+
 
 
 // Start the server

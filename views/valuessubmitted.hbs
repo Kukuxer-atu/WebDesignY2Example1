@@ -1,0 +1,9 @@
+<h1>Values submitted via the query string to this page</h1>
+
+<ul>
+  {{#each data}}
+    <li>Key: {{@key}} Value: {{this}}</li>
+  {{else}}
+    <li>No form values submitted yet.</li>
+  {{/each}}
+</ul>

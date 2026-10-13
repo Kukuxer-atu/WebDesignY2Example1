@@ -856,3 +856,200 @@ footer {
     font-size: 0.95rem;
   }
 }
+/* ========================================
+   CONTACT FORM - MAIN CONTAINER
+======================================== */
+
+.contact-form {
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 450px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Form heading */
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #750796;
+  font-size: 1.8rem;
+}
+
+/* ========================================
+   LABELS
+======================================== */
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.required {
+  color: #e53935;
+  font-weight: bold;
+}
+
+/* ========================================
+   TEXT, NUMBER AND DATE INPUTS
+======================================== */
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"],
+.contact-form input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input focus effect */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="number"]:focus,
+.contact-form input[type="date"]:focus {
+  border-color: #750796;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(117, 7, 150, 0.12);
+}
+
+/* ========================================
+   GENDER FIELDSET
+======================================== */
+
+.contact-form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 22px;
+  background: #faf8fc;
+}
+
+.contact-form legend {
+  padding: 0 8px;
+  color: #750796;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Put radio buttons and labels on one line */
+.contact-form fieldset input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  margin: 0 7px 0 0;
+  vertical-align: middle;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Selected radio button */
+.contact-form fieldset input[type="radio"]:checked {
+  border: 5px solid #750796;
+  background: #fff;
+}
+
+/* Radio button hover */
+.contact-form fieldset input[type="radio"]:hover {
+  border-color: #b312d6;
+}
+
+/* Keyboard focus */
+.contact-form fieldset input[type="radio"]:focus-visible {
+  outline: 3px solid rgba(117, 7, 150, 0.25);
+  outline-offset: 3px;
+}
+
+/* Gender labels */
+.contact-form fieldset label {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  font-size: 0.95rem;
+  font-weight: normal;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* ========================================
+   SUBMIT BUTTON
+======================================== */
+
+.contact-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #750796, #b312d6);
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(117, 7, 150, 0.3);
+}
+
+/* Keyboard focus for button */
+.contact-form button[type="submit"]:focus-visible {
+  outline: 3px solid #b312d6;
+  outline-offset: 3px;
+}
+
+/* ========================================
+   FORM MESSAGE
+======================================== */
+
+#form-msg {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ========================================
+   MOBILE RESPONSIVENESS
+======================================== */
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form fieldset {
+    padding: 12px;
+  }
+
+  .contact-form fieldset label {
+    margin-right: 12px;
+  }
+}
