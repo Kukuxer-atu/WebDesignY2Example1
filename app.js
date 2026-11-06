@@ -87,10 +87,16 @@ app.get('/contact', (req, res) => {
     app.get('/valuessubmitted', (req, res) => {
     state={valuessubmited : true}
     console.table(req.query);
-    //console.log(json.stringify(req.query));
     head={title:"form values"} ;
     res.render('valuessubmitted', { state, head, data: req.query });
     console.log('valuessubmitted')
+  });
+   app.get('/bsform', (req, res) => {
+    state={bsform : true}
+    console.table(req.query);
+    head={title:"form values"} ;
+    res.render('bootstrapform', { state, head, data: req.query });
+    console.log('bsform')
   });
 
   app.use(express.static('public'));

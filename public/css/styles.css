@@ -860,6 +860,17 @@ footer {
    CONTACT FORM - MAIN CONTAINER
 ======================================== */
 
+form {
+  width: min(100%, 600px);
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
+
+
+
 .contact-form {
   margin: 30px auto;
   background: #ffffff;
